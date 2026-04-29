@@ -1,0 +1,15 @@
+Arduino Mega          L293D           Moteurs TT
+─────────────────────────────────────────────────
+Pin 5  (PWM) ───────→ EN1,2  ──────→ Vitesse FL
+Pin 22       ───────→ IN1    ──────→ Direction FL
+Pin 23       ───────→ IN2    ──────→ Direction FL
+
+Pin 6  (PWM) ───────→ EN3,4  ──────→ Vitesse FR
+Pin 24       ───────→ IN3    ──────→ Direction FR
+Pin 25       ───────→ IN4    ──────→ Direction FR
+
+(même logique pour RL pins 7,26,27 et RR pins 8,28,29)
+
+5V Arduino   ───────→ VCC L293D
+GND Arduino  ───────→ GND L293D
+Batterie 6V  ───────→ VS L293D  (alimentation moteurs)
