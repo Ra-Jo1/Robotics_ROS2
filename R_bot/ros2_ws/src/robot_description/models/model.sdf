@@ -6,14 +6,14 @@
     <!-- Chassis -->
     <link name="base_link">
       <inertial>
-        <mass>2.0</mass>
+        <mass>0.5</mass>
         <inertia>
           <ixx>0.02</ixx><iyy>0.02</iyy><izz>0.04</izz>
         </inertia>
       </inertial>
       <visual name="base_visual">
         <geometry>
-          <box><size>0.30 0.25 0.07</size></box>
+          <box><size>0.18 0.14 0.09</size></box>
         </geometry>
         <material>
           <ambient>0.9 0.9 0.9 1</ambient>
@@ -30,15 +30,15 @@
     <!-- Roue Avant Gauche -->
     <link name="wheel_fl">
       <pose>0.10 0.14 0 1.5707 0 0</pose>
-      <inertial><mass>0.1</mass>
+      <inertial><mass>0.05</mass>
         <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz></inertia>
       </inertial>
       <visual name="vis">
-        <geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry>
+        <geometry><cylinder><radius>0.025</radius><length>0.02</length></cylinder></geometry>
         <material><ambient>0.1 0.1 0.1 1</ambient><diffuse>0.1 0.1 0.1 1</diffuse></material>
       </visual>
       <collision name="col">
-        <geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry>
+        <geometry><cylinder><radius>0.025</radius><length>0.02</length></cylinder></geometry>
       </collision>
     </link>
     <joint name="joint_fl" type="revolute">
@@ -49,15 +49,15 @@
     <!-- Roue Avant Droite -->
     <link name="wheel_fr">
       <pose>0.10 -0.14 0 1.5707 0 0</pose>
-      <inertial><mass>0.1</mass>
+      <inertial><mass>0.05</mass>
         <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz></inertia>
       </inertial>
       <visual name="vis">
-        <geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry>
+        <geometry><cylinder><radius>0.025</radius><length>0.02</length></cylinder></geometry>
         <material><ambient>0.1 0.1 0.1 1</ambient><diffuse>0.1 0.1 0.1 1</diffuse></material>
       </visual>
       <collision name="col">
-        <geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry>
+        <geometry><cylinder><radius>0.025</radius><length>0.02</length></cylinder></geometry>
       </collision>
     </link>
     <joint name="joint_fr" type="revolute">
@@ -68,15 +68,15 @@
     <!-- Roue Arrière Gauche -->
     <link name="wheel_rl">
       <pose>-0.10 0.14 0 1.5707 0 0</pose>
-      <inertial><mass>0.1</mass>
+      <inertial><mass>0.05</mass>
         <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz></inertia>
       </inertial>
       <visual name="vis">
-        <geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry>
+        <geometry><cylinder><radius>0.025</radius><length>0.02</length></cylinder></geometry>
         <material><ambient>0.1 0.1 0.1 1</ambient><diffuse>0.1 0.1 0.1 1</diffuse></material>
       </visual>
       <collision name="col">
-        <geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry>
+        <geometry><cylinder><radius>0.025</radius><length>0.02</length></cylinder></geometry>
       </collision>
     </link>
     <joint name="joint_rl" type="revolute">
@@ -87,15 +87,15 @@
     <!-- Roue Arrière Droite -->
     <link name="wheel_rr">
       <pose>-0.10 -0.14 0 1.5707 0 0</pose>
-      <inertial><mass>0.1</mass>
+      <inertial><mass>0.05</mass>
         <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz></inertia>
       </inertial>
       <visual name="vis">
-        <geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry>
+        <geometry><cylinder><radius>0.025</radius><length>0.02</length></cylinder></geometry>
         <material><ambient>0.1 0.1 0.1 1</ambient><diffuse>0.1 0.1 0.1 1</diffuse></material>
       </visual>
       <collision name="col">
-        <geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry>
+        <geometry><cylinder><radius>0.025</radius><length>0.02</length></cylinder></geometry>
       </collision>
     </link>
     <joint name="joint_rr" type="revolute">
