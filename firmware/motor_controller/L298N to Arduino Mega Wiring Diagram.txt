@@ -1,0 +1,37 @@
+Arduino Mega          L298N #1                Moteurs TT
+──────────────────────────────────────────────────────────
+Pin 5  (PWM) ───────→ ENA    ──────────────→ Vitesse FL
+Pin 22       ───────→ IN1    ──────────────→ Direction FL
+Pin 23       ───────→ IN2    ──────────────→ Direction FL
+                      OUT1 ──────────────→ Moteur FL (+)
+                      OUT2 ──────────────→ Moteur FL (-)
+
+Pin 6  (PWM) ───────→ ENB    ──────────────→ Vitesse FR
+Pin 24       ───────→ IN3    ──────────────→ Direction FR
+Pin 25       ───────→ IN4    ──────────────→ Direction FR
+                      OUT3 ──────────────→ Moteur FR (+)
+                      OUT4 ──────────────→ Moteur FR (-)
+
+5V Arduino   ───────→ VCC  (logique L298N #1)
+GND Arduino  ───────→ GND  (logique L298N #1)
+Batterie +   ───────→ VS   (alimentation moteurs)
+Batterie -   ───────→ GND  (commun avec Arduino)
+
+Arduino Mega          L298N #2                Moteurs TT
+──────────────────────────────────────────────────────────
+Pin 7  (PWM) ───────→ ENA    ──────────────→ Vitesse RL
+Pin 26       ───────→ IN1    ──────────────→ Direction RL
+Pin 27       ───────→ IN2    ──────────────→ Direction RL
+                      OUT1 ──────────────→ Moteur RL (+)
+                      OUT2 ──────────────→ Moteur RL (-)
+
+Pin 8  (PWM) ───────→ ENB    ──────────────→ Vitesse RR
+Pin 28       ───────→ IN3    ──────────────→ Direction RR
+Pin 29       ───────→ IN4    ──────────────→ Direction RR
+                      OUT3 ──────────────→ Moteur RR (+)
+                      OUT4 ──────────────→ Moteur RR (-)
+
+5V Arduino   ───────→ VCC  (logique L298N #2)
+GND Arduino  ───────→ GND  (logique L298N #2)
+Batterie +   ───────→ VS   (alimentation moteurs)
+Batterie -   ───────→ GND  (commun avec Arduino)
