@@ -71,7 +71,7 @@ void setup() {
   Serial.begin(BAUD_RATE);
   Serial.println("{\"status\":\"ready\", \"mode\":\"mecanum_4roues\"}");
 
-  testRotation();
+  //testRotation();
 }
 
 // =====================
@@ -188,7 +188,7 @@ void stopAll() {
 // =====================
 void testRotation() {
   delay(1000);                  // Attends 1 sec après démarrage
-  driveMecanum(1, 0, 0);     
+  driveMecanum(1, 0, 0);
   delay(3000);                  // Pendant 3 secondes
   stopAll();                    // Stop
   Serial.println("{\"test\":\"done\"}");
